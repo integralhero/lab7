@@ -70,6 +70,7 @@ function initializePage() {
 			'summary': summary
 		};
 		$.post('/project/new', json, function() {
+			console.log('reloaded!');
 			window.location.href = '/'; // reload the page
 		});
 	});
